@@ -6,7 +6,7 @@ from database import *
 from scrap_funcs import *
 from flask import Flask, request, render_template, jsonify, json, redirect, url_for
 from flask import send_file, send_from_directory, make_response
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 
